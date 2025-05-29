@@ -1,0 +1,55 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slider{
+  position: relative;
+  width: 60%;
+  height: 40%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img{
+  width: 100%;
+  display: none;
+}
+
+img.displaySlide{
+  display: block;
+  animation: fade 1.5s;
+}
+
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.prev{
+  left: 0;
+}
+
+.next{
+  right: 0;
+}
+
+button#resume{
+  top: 90%;
+  left: 40%;
+  font-size: 2rem;
+  background: hsla(0, 0%, 0%, 0.144);
+  border: none;
+  color: black;
+}
+
+@keyframes fade{
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
